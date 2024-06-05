@@ -96,7 +96,7 @@ az aro create \
   --vnet "$AZR_CLUSTER-aro-vnet-$AZR_RESOURCE_LOCATION" \
   --master-subnet "$AZR_CLUSTER-aro-control-subnet-$AZR_RESOURCE_LOCATION" \
   --worker-subnet "$AZR_CLUSTER-aro-machine-subnet-$AZR_RESOURCE_LOCATION" \
-  --pull-secret @$AZR_PULL_SECRET
+  --pull-secret @$AZR_PULL_SECRET \
   --version "$AZR_VERSION"
 
 az aro show \
